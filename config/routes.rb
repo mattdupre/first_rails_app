@@ -1,4 +1,16 @@
 FirstApp::Application.routes.draw do
+  resources :new_projects
+
+
+  resources :news
+
+
+  resources :second_rails_apps
+
+
+  resources :bigposts
+
+
   resources :microposts
 
 

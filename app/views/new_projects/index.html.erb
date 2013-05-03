@@ -1,0 +1,21 @@
+<h1>Listing new_projects</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @new_projects.each do |new_project| %>
+  <tr>
+    <td><%= link_to 'Show', new_project %></td>
+    <td><%= link_to 'Edit', edit_new_project_path(new_project) %></td>
+    <td><%= link_to 'Destroy', new_project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New New project', new_new_project_path %>
